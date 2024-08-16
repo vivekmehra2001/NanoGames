@@ -9,6 +9,12 @@ import Footer from './component/Footer';
 import Auth from './component/authentication/Auth';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Slots from './pages/childcomponent/Slots';
+import LiveCasino from './pages/childcomponent/LiveCasino';
+import Promotion from './pages/childcomponent/Promotion';
+import Lottery from './pages/childcomponent/Lottery'
+import Affiliate from './pages/childcomponent/Affiliate'
+import VipClub from './pages/childcomponent/VipClub'
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -26,10 +32,14 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Auth />} />
 
-        {/* <Route path="/ng-house" element={<NGhouse />} /> */}
-        {/* <Route path="/original" element={<Original />} /> */}
+        <Route path="/slots" element={<Slots />} />
+        <Route path="/live-casino" element={<LiveCasino />} />
+        <Route path="/promotion" element={<Promotion />} />
+        <Route path="/lottery" element={<Lottery/>} />
+        <Route path="/affiliate" element={<Affiliate />} />
+        <Route path="/vipclub" element={<VipClub />} />
       </Routes>
-      <Footer/>
+      <Footer />
       <ToastContainer />
     </BrowserRouter>
   );

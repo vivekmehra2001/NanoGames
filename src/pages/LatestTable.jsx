@@ -26,7 +26,7 @@ const LatestTable = () => {
           Contest
         </button>
       </div> */}
-       <div className="flex flex-row overflow-hidden md:flex-row w-full max-w-md mx-auto bg-[#303238] font-semibold text-white rounded-full">
+       <div className="flex flex-row overflow-hidden md:flex-row w-auto  max-w-sm  bg-[#303238] font-semibold text-white rounded-full">
       <button
         className={`w-full md:w-1/2 text-center hover:text-white rounded-full py-2 px-4 transition-colors duration-300 ${activeTab === 'latest' ? 'bg-[#63656b]' : 'bg-[#303238], text-gray-400'}`}
         onClick={() => handleTabClick('latest')}

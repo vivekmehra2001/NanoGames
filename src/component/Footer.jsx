@@ -78,7 +78,7 @@ import { BsShieldFillPlus } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className='p-8 md:ml-60  md:p-16 py-7 w-90% bg-[#121215] text-white'>
+    <div className='p-8   md:ml-60   md:p-16 py-7 w-90% bg-[#121215] text-white'>
       <div className='divide-y divide-gray-700'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8 divide-y md:divide-y-0 md:divide-x divide-gray-700'>
           <div className='md:pr-8'>
@@ -113,14 +113,14 @@ const Footer = () => {
           </div>
         </div>
         <div className='mt-5 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm'>
-          <div className='flex items-center gap-3 mt-5 md:mt-0'>
+          <div className='flex items-center gap-3 mt-5 md:mt-10'>
             <div className='text-center md:text-left'>
               <p>Responsible</p>
               <p>Gambling</p>
             </div>
             <BsShieldFillPlus className='text-3xl' />
           </div>
-          <div className='flex items-center gap-6 mt-5 md:mt-0'>
+          <div className='flex items-center gap-6 mt-5 md:mt-10'>
             <p className='text-center'>@2024 NANOGAMES.IO ALL RIGHTS RESERVED</p>
             <div className='rounded-full w-10 h-10 flex items-center justify-center bg-gray-600'>
               <p>Top</p>

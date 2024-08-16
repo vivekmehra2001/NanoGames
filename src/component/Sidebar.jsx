@@ -12,6 +12,7 @@ import { MdOutlineRocket } from "react-icons/md";
 import { LuDog } from "react-icons/lu";
 import { FaTag } from "react-icons/fa";
 import { GiSnowboard,GiMeepleCircle ,GiQueenCrown } from "react-icons/gi";
+import { Link } from 'react-router-dom';
 
 
 const Sidebar = ({ sidebarOpen, toggleSidebar }) => {
@@ -62,15 +63,19 @@ const Sidebar = ({ sidebarOpen, toggleSidebar }) => {
       {/* Sidebar Content */}
       <div className="mostly-customized-scrollbar h-full custom-scrollbar   px-3 py-4 bg-[#181a1d]">
         <ul className="space-y-2 font-medium">
-          <li>
+        
+         <li>
+         <Link to="/">
             <a
-              href="#"
+             
               className="flex items-center p-2 text-gray-900 rounded-lg dark:text-[#99A4B0] hover:text-white dark:hover:bg-gray-700 group"
             >
               <IoMdHome className='text-[rgb(67,169,9)] size-6'/>
               <span className="ms-2">Home</span>
             </a>
+            </Link>
           </li>
+       
           <li>
             <div className="relative w-full transition duration-2000 delay-4000  group">
               <button
@@ -215,16 +220,23 @@ const Sidebar = ({ sidebarOpen, toggleSidebar }) => {
           </li>
           
             {/* Other sidebar items */}
+           
             <li>
+            <Link to="/slots">
              <a
               href="#"
-              className="flex items-center p-2 py-1 text-gray-900 rounded-lg dark:text-[#99A4B0] hover:text-white dark:hover:bg-gray-700 group"
+              className="flex items-center p-2 py-3 text-gray-900 rounded-lg dark:text-[#99A4B0] hover:text-white dark:hover:bg-gray-700 group"
             >
               <IoLogoDropbox className='text-purple-900 size-6'/>
               <span className="ms-2">Slots</span>
             </a>
+             </Link>
           </li>
-          <li>
+           
+           
+      
+       <li>
+       <Link to="/live-casino">
             <a
               href="#"
               className="flex items-center p-2 py-3 text-gray-900 rounded-lg dark:text-[#99A4B0] hover:text-white dark:hover:bg-gray-700 group"
@@ -232,8 +244,12 @@ const Sidebar = ({ sidebarOpen, toggleSidebar }) => {
               <IoTabletLandscape className='text-green-500 size-6' />
               <span className="ms-2">Live Casino</span>
             </a>
+            </Link>
           </li>
-          <li>
+     
+      
+         <li>
+         <Link to="/promotion">
             <a
               href="#"
               className="flex items-center p-2 py-3 text-gray-900 rounded-lg dark:text-[#99A4B0] hover:text-white dark:hover:bg-gray-700 group"
@@ -241,7 +257,9 @@ const Sidebar = ({ sidebarOpen, toggleSidebar }) => {
               <TbCardsFilled className='text-orange-400 size-6'/>
               <span className="ms-2 text-lg font-extrabold italic text-[rgb(67,169,9)]">Promotions</span>
             </a>
+            </Link>
           </li>
+        
 
           <li className=' justify-between px-7 '>
             <div className='flex gap-4 '>
@@ -274,7 +292,9 @@ const Sidebar = ({ sidebarOpen, toggleSidebar }) => {
               
               </div>
              
-              <li>
+          
+          <li>
+          <Link to="/lottery">
             <a
               href="#"
               className="flex items-center p-2 py-3 text-gray-900 rounded-lg dark:text-[#99A4B0] hover:text-white dark:hover:bg-gray-700 group"
@@ -282,9 +302,13 @@ const Sidebar = ({ sidebarOpen, toggleSidebar }) => {
               <GiSnowboard className='text-[rgb(67,179,9)] size-6' />
               <span className="ms-2">Lottery</span>
             </a>
+            </Link>
           </li>
+        
 
-          <li>
+   
+    <li>
+    <Link to="/affiliate">
             <a
               href="#"
               className="flex items-center p-2 py-3 text-gray-900 rounded-lg dark:text-[#99A4B0] hover:text-white dark:hover:bg-gray-700 group"
@@ -292,9 +316,13 @@ const Sidebar = ({ sidebarOpen, toggleSidebar }) => {
               <GiMeepleCircle className='text-blue-900 size-6'  />
               <span className="ms-2">Affiliate</span>
             </a>
+            </Link>
           </li>
+   
 
-          <li>
+       
+         <li>
+         <Link to="/vipclub">
             <a
               href="#"
               className="flex items-center p-2 py-3 text-gray-900 rounded-lg dark:text-[#99A4B0] hover:text-white dark:hover:bg-gray-700 group"
@@ -302,8 +330,10 @@ const Sidebar = ({ sidebarOpen, toggleSidebar }) => {
                 <GiQueenCrown className='text-yellow-500 size-6' />
               <span className="ms-2 text-lg font-extrabold italic text-[rgb(245,87,52)]">VIP Club</span>
             </a>
+            </Link>
           </li>
 
+        
           <li>
             <a
               href="#"
