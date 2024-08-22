@@ -78,7 +78,7 @@ import { BsShieldFillPlus } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className='p-8   md:ml-60   md:p-16 py-7 w-90% bg-[#121215] text-white'>
+    <div className='p-8    md:ml-60   md:p-16 py-7 w-90% bg-[#121215] text-white'>
       <div className='divide-y divide-gray-700'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8 divide-y md:divide-y-0 md:divide-x divide-gray-700'>
           <div className='md:pr-8'>
